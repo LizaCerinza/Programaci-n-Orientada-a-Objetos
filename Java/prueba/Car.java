@@ -1,14 +1,46 @@
 package Java.prueba;
 
 public class Car {
-    Integer id;
-    String  license;
-    Account  driver;
-    Integer passengers;  
+    private Integer id;
+    private String  license;
+    private Account  driver;
+    private Integer passengers;  
 
     public Car(String license, Account driver ){
         this.license = license;
         this.driver  = driver;
+    }
+
+    public Integer getPassengers(){
+        return this.passengers;
+    }
+
+    public void setPassengers( Integer passangers){
+        this.passengers = passangers;   
+    }
+
+    public Integer getid(){
+        return this.id;
+    }
+
+    public void setid( Integer id){
+        this.id = id;   
+    }
+
+    public String getLicense(){
+        return this.license;
+    }
+
+    public void setLicense( String license){
+        this.license = license;   
+    }
+
+    public Account  getDriver(){
+        return this.driver;
+    }
+
+    public void setDriver( Account driver){
+        this.driver = driver;   
     }
 
     void printDataCar(){
